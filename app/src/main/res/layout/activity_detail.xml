@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DetailActivity">
+
+    <TextView
+        android:id="@+id/tvHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Detail"
+        android:layout_gravity="center"
+        style="@style/Base.TextAppearance.AppCompat.Large"/>
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dip" >
+
+            <TextView
+                android:text="Name:" />
+
+            <EditText
+                android:id="@+id/etName"
+                android:text="Name" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dip" >
+
+            <TextView
+                android:text="Phone:" />
+
+            <EditText
+                android:id="@+id/etPhone"
+                android:text="Phone" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dip" >
+
+            <TextView
+                android:text="Favorite:" />
+
+            <CheckBox
+                android:id="@+id/cbFavorite"
+                android:checked="false" />
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dip" >
+
+            <Button
+                android:id="@+id/btnCancel"
+                android:text="Cancel"
+                android:layout_gravity="center"/>
+
+            <Button
+                android:id="@+id/btnOk"
+                android:text="OK"
+                android:layout_gravity="center"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dip" >
+
+            <Button
+                android:id="@+id/btnUrl"
+                android:text="URL"
+                android:layout_gravity="center"/>
+
+            <Button
+                android:id="@+id/btnPhone"
+                android:text="PHONE"
+                android:layout_gravity="center"/>
+
+            <Button android:id="@+id/btnSms"
+                android:text="SMS"
+                android:layout_gravity="center"/>
+
+            <Button android:id="@+id/btnEmail"
+                android:text="EMAIL"
+                android:layout_gravity="center"/>
+        </TableRow>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            android:id="@+id/imgView"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/face"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Filename..."
+            android:id="@+id/txtFileName"
+            android:layout_above="@id/imgView"
+            android:layout_centerHorizontal="true" />
+
+    </TableLayout>
+
+
+
+</LinearLayout>
